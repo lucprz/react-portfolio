@@ -10,7 +10,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicpath: "/",
+    publicPath: "/",
   },
   resolve: {
     extensions: [".js", ".jsx"],
@@ -51,6 +51,6 @@ module.exports = {
   ],
   optimization: {
     minimize: true,
-    minizer: [new CssMinimizerPlugin(), new TerserPlugin()],
+    minimizer: [new CssMinimizerPlugin(), new TerserPlugin()],
   },
 };
